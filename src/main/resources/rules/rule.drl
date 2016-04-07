@@ -1,0 +1,33 @@
+package rules.delivery;
+
+import java.util.List;
+import java.util.Arrays;
+import java.util.ArrayList;
+
+// import api
+import com.darty.drools.LineDeliveryFee;
+
+
+// import model
+import com.darty.drools.CodicCriteria;
+import com.darty.drools.LinePrestationPriceConfiguration;
+
+
+rule "CODIC_CRITERIA"
+	dialect "mvel"
+	no-loop true
+when 
+	/* Bind common facts (cf : lineDeliveryQueries.drl) */
+    commonFacts($prestationPriceConf;)
+    
+    $codicCriteria : CodicCriteria() from $prestationPriceConf.codicCriterias;
+    
+    //If you remove this conditionnal breaking rule that work
+    if(1==2)
+        break[combineCriteria]
+
+then
+    System.out.println("something");
+then[combineCriteria]
+    System.out.println("somethingElse");
+end

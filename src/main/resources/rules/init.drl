@@ -1,0 +1,20 @@
+package rules.delivery;
+
+import java.util.List;
+import java.util.Arrays;
+
+// import api
+import com.darty.drools.LineDeliveryFee;
+
+// import model
+import com.darty.drools.LinePrestationPriceConfiguration;
+
+
+rule "INIT_RULE"
+	dialect "mvel"
+	
+when 
+then
+    $deliveryFee = new LineDeliveryFee(6565254);
+    insert($deliveryFee);
+end

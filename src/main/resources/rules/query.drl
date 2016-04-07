@@ -1,0 +1,18 @@
+package rules.delivery;
+
+// import api
+import com.darty.drools.LineDeliveryFee;
+
+
+// import model
+import com.darty.drools.LinePrestationPriceConfiguration;
+
+/**
+* Bind common facts used in all delivery line rules
+*/
+query commonFacts(LinePrestationPriceConfiguration $prestationPriceConf)
+    $prestationPriceConf := LinePrestationPriceConfiguration(
+    );
+    
+    $deliveryFee : LineDeliveryFee(orderItemId == 6565254);
+end

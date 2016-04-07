@@ -1,0 +1,8 @@
+/bin
+/target
+.settings
+.classpath
+.project
+/darty-pricing-ws.log
+/drools-example-audit.log
+/java_pid10188.hprof

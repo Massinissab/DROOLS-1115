@@ -1,0 +1,30 @@
+{
+	"curly": true,
+	"immed": true,
+	"newcap": false,
+	"noarg": true,
+	"undef": true,
+	"strict": true,
+	"globalstrict": true,
+	"trailing": true,
+	"quotmark": "single",
+	"indent": 4,
+	"globals": {
+		"angular": true,
+		"promoApp": true,
+		"$": true,
+		"jQuery": true
+	},
+	"boss": true,
+	"eqnull": true,
+	"sub": true,
+	"maxlen": 200,
+	"bitwise": true,
+	"noempty": true,
+	"nonew": true,
+	"expr": true,
+	"loopfunc": true,
+	"browser":true,
+	"node": true,
+	"devel": true
+}

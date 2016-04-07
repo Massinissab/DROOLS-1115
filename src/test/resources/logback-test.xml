@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration scan="true">
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<!--
+	<logger name="org.hibernate" level="debug" />
+	<logger name="org.infinispan" level="debug" />
+	<logger name="org.hibernate.cache" level="debug" />
+	-->
+
+	<!--<logger name="com.darty.pricing.core" level="debug" />-->
+    <logger name="com.darty.pricing.drools" level="debug" />
+	<logger name="org.drools" level="debug" />
+	<logger name="org.hibernate.tool.hbm2ddl" level="off" />
+	<logger name="org.hibernate.testing.cache" level="error" />
+
+	<root level="warn">
+		<appender-ref ref="STDOUT" />
+	</root>
+</configuration>
