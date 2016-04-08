@@ -7,5 +7,5 @@ Project infos:
 - Jdk 8
 
 This project contains : 
-- 3 rules (do not try to understant the content, writtent just to reproduce the bug)
+- 3 rules (do not try to understand the content, writtent just to reproduce the bug)
 - 1 unit test  : com.darty.drools.CodicCriteriaTest (This test fails)
