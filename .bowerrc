@@ -1,6 +1,0 @@
-{
-	"directory": "src/main/resources/application/bower_components",
-	"json": "bower.json",
-	"proxy":"http://133.54.152.11:8667",
-	"https-proxy":"http://133.54.152.11:8667"
-}
